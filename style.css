@@ -1,0 +1,82 @@
+body{
+    margin: 0;
+    background-color: rgba(245, 222, 179, 0.603);
+}
+
+#container{
+    margin-top: 100px;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    align-items: center;
+    
+}
+
+.butonStg, .butonDrp{
+    font-size: 50px;
+    border-radius: 50%;
+    color: tomato;
+    background-color: rgba(6, 161, 161, 0);
+    outline: none;
+    border: none;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.butonStg i, .butonDrp i{
+    text-shadow: 0px 0px 10px rgb(0, 0, 0);
+}
+
+.butonStg{
+    margin-right: -25px;
+    z-index: 1;
+}
+
+.butonDrp{
+    margin-left: -25px;
+    z-index: 1;
+}
+
+
+#imgCont{
+    background-image: url("images/hakon-sataoen-yQ9mZzBdDAM-unsplash.jpg");
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    padding-bottom: 50%;
+    border-radius: 5%;
+    border: 1px solid tomato;
+    box-shadow: 0px 5px 10px tomato;
+}
+
+@media(max-width: 900px){
+    #container{
+        width: 80%;
+    }
+    
+    .butonStg{
+        margin-right: -50px;
+    }
+    
+    .butonDrp{
+        margin-left: -50px;
+    }
+}
+
+@media(max-width: 600px ){
+    #container{
+        width: 95%;
+    }
+}
+
+
+.butonStg:hover{
+    transform: translate(-10px, 0px);
+    text-shadow: 0px 0px 10px rgb(255, 73, 41); 
+}
+
+.butonDrp:hover{
+    transform: translate(+10px, 0px);
+    text-shadow: 0px 0px 10px rgb(255, 73, 41); 
+}
